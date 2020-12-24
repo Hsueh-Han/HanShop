@@ -1,0 +1,138 @@
+$text-color: rgba(53, 51, 51, 0.7);
+
+.header-style{
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(195, 196, 204, 0.5)
+}
+
+.list-style-none{
+  list-style: none;
+}
+
+.index-title{
+  font-size: 1.25rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+  a{
+    text-decoration: none;
+    color: #252424;
+  }
+}
+
+.top-bar{
+  padding: 5px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+
+  .topbar-item a{
+    text-decoration: none;
+    padding: 5px;
+    color: $text-color;
+    font-size: 1rem;
+    @media (min-width: 376px) {
+      font-size: 1.25rem;
+      padding: 10px;
+    }
+    &:hover{
+      color: rgba(11, 17, 54, 0.7);
+    }
+  }
+}
+
+.navbar-store{
+  overflow: hidden;
+  height: 0px;
+  transition: 0.5s all;
+  margin: 0 0;
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  @media (min-width: 768px) {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: initial;
+  }
+  .navbar-store-item a{
+    transition: 0.2s all;
+    background: #ffffff;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #ffffff;
+    color: $text-color;
+    &:hover, &.active{
+      color: #ffffff;
+      background: $text-color;
+    }
+    @media (min-width: 768px) {
+      padding: 15px;
+    }
+  }
+}
+.navbar-store-out{
+  height: 265px;
+}
+.navbar-store-btn{
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background: #ffffff;
+  @media (min-width: 768px) {
+    display: none;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.text-color{
+  color: $text-color;
+}
+.bg-footer{
+  background-color: #e7e4e4;
+}
+
+.footer-link{
+  color: $text-color;
+  &:hover{
+    text-decoration: none;
+    color: rgba(11, 17, 54, 0.7);
+  }
+}
+
+.border-bottom-md{
+  border-bottom: 1px solid #ffffff;
+  @media (min-width: 992px) {
+    border-bottom: none;
+  }
+}
+
+.toTopBtn{
+  width: 48px;
+  height: 48px;
+  background: rgba(243, 243, 245, 0.5);
+  box-shadow: 1px 1px 3px #8a8989;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.25s all;
+  cursor: pointer;
+  color: #535050;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 15%;
+  right: 3%;
+  z-index: 1500;
+  &:hover{
+    color: $text-color;
+  }
+}

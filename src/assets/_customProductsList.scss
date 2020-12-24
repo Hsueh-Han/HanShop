@@ -1,0 +1,12 @@
+.product-img{
+  height: 250px;
+  margin-bottom: 1rem;
+  background-position: center center;
+  background-size: cover;
+  @media (min-width: 767px) {
+    height: 300px;
+  }
+}
+.cus-page-active a{
+  background-color: rgb(187, 182, 182);
+}
